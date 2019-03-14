@@ -1,0 +1,6 @@
+FROM  php 
+MAINTAINER  mdhack
+RUN apt install httpd  -y
+COPY   index.php /var/www/html/
+EXPOSE 80
+CMD  httpd  -DFOREGORUND
